@@ -10,23 +10,44 @@
 }
 
 .home .text{
-    width: 600px;
-    height: 500px;
-    border: 1px solid #fff;
+    width: 780px;
+    height: 300px;
+    background-color: #8739fa;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
+    clip-path: polygon(0% 0%, 100% 0, 85% 59%, 75% 100%, 0% 100%);
+    padding: 10px;
+}
+.home .rasm{
+    width: 600px;
+    height: 400px;
+    background-color: #8739fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(46% 0, 100% 0%, 100% 100%, 0 100%, 20% 58%);
+
+}
+.rasm img{
+    width: 90%;
+    transform: translate(100px, -100px);
+    filter: grayscale(100%);
+}
+.rasm img:hover{
+    filter: grayscale(0%);
 }
 .home .text h1{
-    font-size: 60px;
+    font-size: 50px;
     font-family: sans-serif;
     color: #fff;
     font-family: 'Nunito Sans', sans-serif;
-    font-weight: 100;
+    font-weight: 800;
 }
 .home .text p {
-    font-size: 20px;
+    width: 600px;
+    font-size: 17px;
     color: #ffffffc1;
     font-family: 'Nunito Sans', sans-serif;
 }
@@ -40,4 +61,70 @@
     border-radius: 20px;
     font-weight: bold;
     transition: all 0.3s;
+}
+
+@media (min-width: 350px) and (max-width: 550px){
+    .home{
+        width: 100%;
+        height: 700px;
+        background-color: #151418;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+    }
+    
+    .home .text{
+        width: 780px;
+        height: 300px;
+        background-color: #8739fa;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        clip-path: polygon(0% 0%, 100% 0, 85% 59%, 75% 100%, 0% 100%);
+        padding: 10px;
+    }
+    .home .rasm{
+        width: 600px;
+        height: 400px;
+        background-color: #8739fa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        clip-path: polygon(46% 0, 100% 0%, 100% 100%, 0 100%, 20% 58%);
+    
+    }
+    .rasm img{
+        width: 90%;
+        transform: translate(100px, -100px);
+        filter: grayscale(100%);
+    }
+    .rasm img:hover{
+        filter: grayscale(0%);
+    }
+    .home .text h1{
+        font-size: 50px;
+        font-family: sans-serif;
+        color: #fff;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 800;
+    }
+    .home .text p {
+        width: 600px;
+        font-size: 17px;
+        color: #ffffffc1;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+    
+    .home .text a{
+        padding: 13px 25px;
+        font-size: 25px;
+        font-family: 'Nunito Sans', sans-serif;
+        color: #181818;
+        background-color: #fff;
+        border-radius: 20px;
+        font-weight: bold;
+        transition: all 0.3s;
+    }
 }
