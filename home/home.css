@@ -28,7 +28,10 @@
     justify-content: center;
     align-items: center;
     clip-path: polygon(46% 0, 100% 0%, 100% 100%, 0 100%, 20% 58%);
-
+    transition: all 0.5s;
+}
+.home .rasm:hover{
+    width: 700px;
 }
 .rasm img{
     width: 90%;
@@ -67,59 +70,42 @@
     .home{
         width: 100%;
         height: 700px;
-        background-color: #151418;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 30px;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
     }
     
     .home .text{
-        width: 780px;
+        width: 90%;
         height: 300px;
-        background-color: #8739fa;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-around;
-        clip-path: polygon(0% 0%, 100% 0, 85% 59%, 75% 100%, 0% 100%);
+        align-items: center;
+        clip-path: polygon(0% 0%, 100% 0, 100% 100%, 49% 94%, 0% 100%);
         padding: 10px;
     }
     .home .rasm{
-        width: 600px;
-        height: 400px;
-        background-color: #8739fa;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        clip-path: polygon(46% 0, 100% 0%, 100% 100%, 0 100%, 20% 58%);
-    
+        width: 90%;
+        height: 300px;
+        clip-path: polygon(0 7%, 49% 0, 100% 6%, 100% 100%, 0% 100%);
     }
     .rasm img{
-        width: 90%;
-        transform: translate(100px, -100px);
+        width: 100%;
+        transform: translate(0px, -50px);
         filter: grayscale(100%);
     }
-    .rasm img:hover{
-        filter: grayscale(0%);
-    }
     .home .text h1{
-        font-size: 50px;
-        font-family: sans-serif;
-        color: #fff;
-        font-family: 'Nunito Sans', sans-serif;
+        font-size: 30px;
         font-weight: 800;
     }
     .home .text p {
-        width: 600px;
-        font-size: 17px;
-        color: #ffffffc1;
-        font-family: 'Nunito Sans', sans-serif;
+        width: 100%;
+        font-size: 13px;
+        text-align: center;
     }
     
     .home .text a{
-        padding: 13px 25px;
-        font-size: 25px;
+        padding: 8px 15px;
+        font-size: 20px;
         font-family: 'Nunito Sans', sans-serif;
         color: #181818;
         background-color: #fff;
