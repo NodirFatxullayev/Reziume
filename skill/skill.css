@@ -1,0 +1,195 @@
+.skill {
+    width: 1440px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 30px;
+    background: linear-gradient(to bottom, #151418 60%, #8739fa);
+}
+
+.skill h1 {
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+}
+
+.skill .container {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    perspective: 1000px;
+}
+
+.cube {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    animation-name: cub;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+.cube:hover {
+    animation-play-state: paused;
+}
+
+@keyframes cub {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    50% {
+        transform: rotateY(360deg);
+    }
+
+    100% {
+        transform: rotateY(360deg) rotateX(360deg);
+    }
+}
+
+.cube div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-shadow: inset 0 0 20px #8739fa;
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(150px);
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(150px);
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(150px);
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(150px);
+}
+
+.front {
+    transform: translateZ(150px);
+}
+
+.back {
+    transform: rotateY(180deg) translateZ(150px);
+}
+
+.html {
+    background-image: url(../images/html.png);
+}
+
+.css {
+    background-image: url(../images/css.png);
+}
+
+.js {
+    background-image: url(../images/js.png);
+}
+
+.sass {
+    background-image: url(../images/sass.png);
+}
+
+.bootstrap {
+    background-image: url(../images/bootstrap.jpg);
+}
+
+.react {
+    background-image: url(../images/react.png);
+}
+
+.git {
+    background-image: url(../images/git.png);
+}
+
+.git-hub {
+    background-image: url(../images/git-hub.png);
+}
+
+.youtube {
+    background-image: url(../images/youtube.png);
+}
+
+.canva {
+    background-image: url(../images/canva.jpg);
+}
+
+.clipchamp {
+    background-image: url(../images/clipchamp.jpg);
+}
+
+.figma {
+    background-image: url(../images/figma.png);
+}
+
+@media (min-width: 350px) and (max-width: 550px) {
+    .skill {
+        width: 100%;
+        height: 900px;
+        padding: 10px;
+    }
+
+    .skill h1 {
+        font-size: 30px;
+
+    }
+
+    .skill .container {
+        width: 100%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        perspective: 1000px;
+    }
+
+    .cube {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .top {
+        transform: rotateX(90deg) translateZ(100px);
+    }
+    
+    .bottom {
+        transform: rotateX(-90deg) translateZ(100px);
+    }
+    
+    .right {
+        transform: rotateY(90deg) translateZ(100px);
+    }
+    
+    .left {
+        transform: rotateY(-90deg) translateZ(100px);
+    }
+    
+    .front {
+        transform: translateZ(100px);
+    }
+    
+    .back {
+        transform: rotateY(180deg) translateZ(100px);
+    }
+}
