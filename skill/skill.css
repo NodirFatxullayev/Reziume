@@ -20,6 +20,7 @@
     width: 100%;
     height: 300px;
     display: flex;
+    padding: 0 100px;
     justify-content: space-around;
     align-items: center;
     perspective: 1000px;
@@ -36,10 +37,12 @@
     animation-name: cub;
     animation-duration: 20s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation-timing-function: ease-in-out;
     animation-direction: alternate;
 }
-
+.cube2{
+    animation-direction: alternate-reverse;
+}
 .cube:hover {
     animation-play-state: paused;
 }
